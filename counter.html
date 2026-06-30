@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Our Journey ❤️</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+.counter-page{
+
+min-height:100vh;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+padding:120px 20px;
+
+}
+
+.counter-card{
+
+max-width:900px;
+width:100%;
+
+background:white;
+
+padding:60px;
+
+border-radius:30px;
+
+text-align:center;
+
+box-shadow:
+0 20px 50px rgba(0,0,0,.15);
+
+}
+
+.counter-title{
+
+font-size:3rem;
+
+color:#ff4f8b;
+
+font-family:'Dancing Script',cursive;
+
+margin-bottom:20px;
+
+}
+
+.counter-subtitle{
+
+font-size:1.2rem;
+
+margin-bottom:50px;
+
+}
+
+.counter-grid{
+
+display:flex;
+
+justify-content:center;
+gap:30px;
+
+flex-wrap:wrap;
+
+margin-bottom:50px;
+
+}
+
+.time-box{
+
+width:180px;
+
+padding:30px;
+
+background:linear-gradient(
+135deg,
+#fff0f6,
+#fff7d6
+);
+
+border-radius:25px;
+
+box-shadow:
+0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.time-box h2{
+
+font-size:3rem;
+
+color:#ff4f8b;
+
+}
+
+.time-box p{
+
+font-weight:600;
+
+margin-top:10px;
+
+}
+
+.love-message{
+
+font-size:1.2rem;
+
+line-height:2;
+
+max-width:700px;
+
+margin:auto;
+
+}
+
+.next-section{
+
+margin-top:50px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="logo">
+Akash ❤️ Pinky
+</div>
+
+<div class="nav-links">
+<a href="index.html">Home</a>
+<a href="story.html">Story</a>
+<a href="gallery.html">Gallery</a>
+<a href="letter.html">Letter</a>
+</div>
+
+</nav>
+
+<section class="counter-page">
+
+<div class="counter-card">
+
+<h1 class="counter-title">
+❤️ Our Journey Together ❤️
+</h1>
+
+<p class="counter-subtitle">
+Together Since 01 September 2020
+</p>
+
+<div class="counter-grid">
+
+<div class="time-box">
+<h2 id="years">0</h2>
+<p>Years</p>
+</div>
+
+<div class="time-box">
+<h2 id="months">0</h2>
+<p>Months</p>
+</div>
+
+<div class="time-box">
+<h2 id="days">0</h2>
+<p>Days</p>
+</div>
+
+</div>
+
+<div class="love-message">
+
+❤️ Thank you for staying through every smile,
+every laugh,
+every challenge,
+and every beautiful memory.
+
+<br><br>
+
+From strangers in Mumbai in 2017,
+to becoming my favorite person,
+our journey has been my favorite story.
+
+<br><br>
+
+And this is only the beginning... ❤️
+
+</div>
+
+<div class="next-section">
+
+<a href="surprise.html">
+
+<button class="btn">
+🎁 Open Your Birthday Surprise
+</button>
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<script>
+
+function updateCounter(){
+
+const startDate =
+new Date("2020-09-01");
+
+const now =
+new Date();
+
+let diff =
+now - startDate;
+
+let totalDays =
+Math.floor(diff/(1000*60*60*24));
+
+let years =
+Math.floor(totalDays/365);
+
+let months =
+Math.floor((totalDays%365)/30);
+
+let days =
+(totalDays%365)%30;
+
+document.getElementById("years").innerText =
+years;
+
+document.getElementById("months").innerText =
+months;
+
+document.getElementById("days").innerText =
+days;
+
+}
+
+updateCounter();
+
+setInterval(updateCounter,1000);
+
+</script>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

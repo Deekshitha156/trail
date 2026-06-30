@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Letter For Akash ❤️</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+.letter-section{
+
+min-height:100vh;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+padding:120px 20px;
+
+}
+
+.love-letter{
+
+max-width:900px;
+width:100%;
+
+background:white;
+
+padding:60px;
+
+border-radius:30px;
+
+box-shadow:
+0 20px 50px rgba(0,0,0,.15);
+
+position:relative;
+
+}
+
+.letter-title{
+
+font-size:3rem;
+
+color:#ff4f8b;
+
+font-family:'Dancing Script',cursive;
+
+text-align:center;
+
+margin-bottom:40px;
+
+}
+
+.letter-content{
+
+font-size:1.2rem;
+
+line-height:2.2;
+
+white-space:pre-line;
+
+}
+
+.signature{
+
+margin-top:50px;
+
+text-align:right;
+
+font-size:2rem;
+
+color:#ff4f8b;
+
+font-family:'Dancing Script',cursive;
+
+}
+
+.typewriter{
+
+border-right:3px solid #ff4f8b;
+
+animation:blink .7s infinite;
+
+}
+
+@keyframes blink{
+
+50%{
+border-color:transparent;
+}
+
+}
+
+.next-btn{
+
+text-align:center;
+margin-top:40px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="logo">
+Akash ❤️ Pinky
+</div>
+
+<div class="nav-links">
+<a href="index.html">Home</a>
+<a href="story.html">Story</a>
+<a href="gallery.html">Gallery</a>
+<a href="letter.html">Letter</a>
+</div>
+
+</nav>
+
+<section class="letter-section">
+
+<div class="love-letter">
+
+<h1 class="letter-title">
+💌 To My Dearest Akash 💌
+</h1>
+
+<div id="letterText"
+class="letter-content typewriter">
+</div>
+
+<div class="signature">
+
+Forever Yours,<br>
+Pinky ❤️
+
+</div>
+
+<div class="next-btn">
+
+<a href="counter.html">
+
+<button class="btn">
+
+Our Journey ❤️
+
+</button>
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<script>
+
+const message = `
+
+There are some people who enter our lives and quietly change everything, and for me, that person is you. ❤️
+
+Looking back, it's hard to believe that we first met as complete strangers in Mumbai. If someone had told me then that one day you would become such an important part of my life, I probably wouldn't have believed it. Yet here we are, after years of conversations, memories, laughter, and moments that I will always cherish.
+
+Thank you for being there through so many chapters of my life. Thank you for the countless smiles, the comfort during difficult days, the laughter that made ordinary moments special, and the memories that I hold so close to my heart. Every moment spent with you has added something beautiful to my life.
+
+Some of my favorite memories are the simplest ones — our conversations, our photos together, our outings, and all those little moments that may seem ordinary to others but mean the world to me. They remind me how lucky I am to have someone like you in my life.
+
+On your special day, I don't just wish you a happy birthday. I wish you a life filled with happiness, success, good health, peace, and countless reasons to smile. I hope every dream you carry in your heart finds its way to reality, and I hope this year brings you everything you've been hoping for and more.
+
+No matter what the future holds, I will always be grateful for the memories we've created and the bond we share. You have a very special place in my heart, and you always will.
+
+Thank you for being my happiness, my comfort, and my favorite person. Life feels a little more beautiful with you in it. ❤️
+
+Once again, Happy Birthday, My Love ❤️
+`;
+
+let i = 0;
+
+function typeWriter(){
+
+if(i < message.length){
+
+document.getElementById("letterText")
+.innerHTML += message.charAt(i);
+
+i++;
+
+setTimeout(typeWriter,30);
+
+}
+
+}
+
+typeWriter();
+
+</script>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Birthday Surprise ❤️</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+.surprise-page{
+
+min-height:100vh;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+padding:120px 20px;
+
+text-align:center;
+
+}
+
+.surprise-card{
+
+max-width:900px;
+width:100%;
+
+background:white;
+
+padding:60px;
+
+border-radius:30px;
+
+box-shadow:
+0 20px 50px rgba(0,0,0,.15);
+
+}
+
+.gift{
+
+font-size:150px;
+
+cursor:pointer;
+
+animation:bounce 2s infinite;
+
+}
+
+.hidden{
+
+display:none;
+
+}
+
+.surprise-message{
+
+animation:fadeIn 1.5s;
+
+}
+
+.surprise-message h1{
+
+font-size:4rem;
+
+color:#ff4f8b;
+
+font-family:'Dancing Script',cursive;
+
+margin-bottom:20px;
+
+}
+
+.surprise-message p{
+
+font-size:1.2rem;
+
+line-height:2;
+
+max-width:700px;
+
+margin:auto;
+
+}
+
+.song-btn{
+
+margin-top:30px;
+
+}
+
+@keyframes fadeIn{
+
+from{
+opacity:0;
+transform:translateY(30px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="logo">
+Akash ❤️ Pinky
+</div>
+
+<div class="nav-links">
+<a href="index.html">Home</a>
+<a href="story.html">Story</a>
+<a href="gallery.html">Gallery</a>
+<a href="letter.html">Letter</a>
+</div>
+
+</nav>
+
+<section class="surprise-page">
+
+<div class="surprise-card">
+
+<div id="giftBox">
+
+<div class="gift" onclick="openGift()">
+🎁
+</div>
+
+<h2>
+Click the Gift ❤️
+</h2>
+
+</div>
+
+<div id="birthdayMessage"
+class="surprise-message hidden">
+
+<h1>
+🎉 Happy Birthday Akash ❤️
+</h1>
+
+<p>
+
+Thank you for being my happiness,
+my comfort,
+and my favorite person.
+
+From strangers in Mumbai,
+to becoming such an important part
+of my life,
+
+every memory with you is special.
+
+I hope this birthday brings you
+all the happiness,
+success,
+love,
+and blessings you deserve.
+
+No matter where life takes us,
+
+you will always be my favorite chapter ❤️
+
+<br><br>
+
+Love,
+Pinky ❤️
+
+</p>
+
+<div class="song-btn">
+
+<a href="ending.html">
+
+<button class="btn">
+One Last Thing... ❤️
+</button>
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<script>
+
+function openGift(){
+
+document
+.getElementById("giftBox")
+.classList.add("hidden");
+
+document
+.getElementById("birthdayMessage")
+.classList.remove("hidden");
+
+}
+
+</script>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
